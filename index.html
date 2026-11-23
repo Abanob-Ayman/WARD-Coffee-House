@@ -1,0 +1,700 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WARD | Coffee House</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+<nav class="navbar navbar-expand-lg fixed-top ward-navbar">
+    <div class="container">
+
+        <a class="navbar-brand logo" href="#home">
+            WARD<span>.</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#hot">Hot Drinks</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#cold">Cold Drinks</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#food">Food</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+            <a href="#hot" class="btn ward-btn">
+                Explore Menu <i class="bi bi-arrow-right"></i>
+            </a>
+
+        </div>
+    </div>
+</nav>
+</header>
+
+
+<!-- HERO -->
+<section class="hero-section" id="home">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6 hero-content">
+
+                <span class="section-label">
+                    WELCOME TO WARD
+                </span>
+
+                <h1>
+                    Good Coffee.
+                    <span>Better Moments.</span>
+                </h1>
+
+                <p>
+                    Discover your favorite coffee, delicious drinks,
+                    and fresh bites in a place made for good moments.
+                </p>
+
+                <div class="d-flex flex-wrap gap-3">
+
+                    <a href="#hot" class="btn hero-btn">
+                        Explore Our Menu
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                    <a href="#about" class="btn outline-btn">
+                        Our Story
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <!-- Image: hero.jpg -->
+                <div class="hero-image">
+                    <img src="Hero.png" alt="hero.jpg">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="about-section section-padding" id="about">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <!-- Image: about.jpg -->
+                <div class="about-image">
+                    <img src="abut.png" alt="about.jpg">
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 about-content">
+
+                <span class="section-label">OUR STORY</span>
+
+                <h2>More Than Just Coffee</h2>
+
+                <p>
+                    At WARD, we believe that every cup tells a story.
+                    We bring together quality ingredients, delicious
+                    flavors, and a welcoming atmosphere.
+                </p>
+
+                <p>
+                    Whether you're starting your day or enjoying
+                    a relaxing moment, WARD is your perfect place.
+                </p>
+
+                <a href="#contact" class="btn ward-btn">
+                    Visit Us <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- HOT DRINKS -->
+<section class="menu-section section-padding" id="hot">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">FRESHLY BREWED</span>
+
+            <h2>Hot Drinks</h2>
+
+            <p>Warm moments in every cup.</p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Espresso -->
+            <div class="col-12 col-sm-6 col-lg-4">
+
+                <div class="menu-card">
+
+                    <div class="product-image">
+                        <img src="Espresso.jpg" alt="espresso.jpg">
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Espresso</h3>
+
+                        <p>Rich and bold coffee with a perfect aroma.</p>
+
+                        <div class="price-row">
+                            <span class="price">EGP 45</span>
+
+                            <button class="add-btn"
+                                onclick="addItem('Espresso')">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Cappuccino -->
+            <div class="col-12 col-sm-6 col-lg-4">
+
+                <div class="menu-card">
+
+                    <div class="product-image">
+                        <img src="cappuccino.webp" alt="cappuccino.jpg">
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Cappuccino</h3>
+
+                        <p>Espresso with steamed milk and creamy foam.</p>
+
+                        <div class="price-row">
+                            <span class="price">EGP 60</span>
+
+                            <button class="add-btn"
+                                onclick="addItem('Cappuccino')">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Latte -->
+            <div class="col-12 col-sm-6 col-lg-4">
+
+                <div class="menu-card">
+
+                    <div class="product-image">
+                        <img src="Latte.png" alt="latte.jpg">
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Hot Latte</h3>
+
+                        <p>Smooth espresso blended with fresh milk.</p>
+
+                        <div class="price-row">
+                            <span class="price">EGP 55</span>
+
+                            <button class="add-btn"
+                                onclick="addItem('Hot Latte')">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- COLD DRINKS -->
+<section class="menu-section section-padding alternate-bg" id="cold">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">COOL & REFRESHING</span>
+
+            <h2>Cold Drinks</h2>
+
+            <p>Refresh your day with every sip.</p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Iced Coffee -->
+            <div class="col-12 col-sm-6 col-lg-4">
+
+                <div class="menu-card">
+
+                    <div class="product-image">
+                        <img src="ice coffee.jpg" alt="iced-coffee.jpg">
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Iced Coffee</h3>
+
+                        <p>Chilled coffee with a smooth, rich taste.</p>
+
+                        <div class="price-row">
+                            <span class="price">EGP 65</span>
+
+                            <button class="add-btn"
+                                onclick="addItem('Iced Coffee')">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Milkshake -->
+            <div class="col-12 col-sm-6 col-lg-4">
+
+                <div class="menu-card">
+
+                    <div class="product-image">
+                        <img src="milkshak.jpg" alt="milkshake.jpg">
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Milkshake</h3>
+
+                        <p>A creamy and delicious milkshake.</p>
+
+                        <div class="price-row">
+                            <span class="price">EGP 70</span>
+
+                            <button class="add-btn"
+                                onclick="addItem('Milkshake')">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Iced Tea -->
+            <div class="col-12 col-sm-6 col-lg-4">
+
+                <div class="menu-card">
+
+                    <div class="product-image">
+                        <img src="ice tea.jpg" alt="iced-tea.jpg">
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Iced Tea</h3>
+
+                        <p>Fresh tea served chilled for your day.</p>
+
+                        <div class="price-row">
+                            <span class="price">EGP 45</span>
+
+                            <button class="add-btn"
+                                onclick="addItem('Iced Tea')">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOD -->
+<section class="menu-section section-padding" id="food">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">MADE WITH LOVE</span>
+
+            <h2>Food & Desserts</h2>
+
+            <p>Something delicious to complete your coffee.</p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Chocolate Cake -->
+            <div class="col-12 col-sm-6 col-lg-4">
+
+                <div class="menu-card">
+
+                    <div class="product-image">
+                        <img src="chocolateCake.webp" alt="chocolate-cake.jpg">
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Chocolate Cake</h3>
+
+                        <p>Rich chocolate cake with delicious cream.</p>
+
+                        <div class="price-row">
+                            <span class="price">EGP 75</span>
+
+                            <button class="add-btn"
+                                onclick="addItem('Chocolate Cake')">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Croissant -->
+            <div class="col-12 col-sm-6 col-lg-4">
+
+                <div class="menu-card">
+
+                    <div class="product-image">
+                        <img src="FreshCrissant.jpg" alt="croissant.jpg">
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Fresh Croissant</h3>
+
+                        <p>Freshly baked, buttery and crispy.</p>
+
+                        <div class="price-row">
+                            <span class="price">EGP 45</span>
+
+                            <button class="add-btn"
+                                onclick="addItem('Croissant')">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Donuts -->
+            <div class="col-12 col-sm-6 col-lg-4">
+
+                <div class="menu-card">
+
+                    <div class="product-image">
+                        <img src="abut.png" alt="donuts.jpg">
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Donuts</h3>
+
+                        <p>Soft donuts with delicious toppings.</p>
+
+                        <div class="price-row">
+                            <span class="price">EGP 40</span>
+
+                            <button class="add-btn"
+                                onclick="addItem('Donuts')">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- GALLERY -->
+<section class="gallery-section section-padding" id="gallery">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">OUR ATMOSPHERE</span>
+
+            <h2>Inside WARD</h2>
+
+            <p>A little look at our coffee house.</p>
+
+        </div>
+
+        <div class="row g-3">
+
+            <div class="col-md-6">
+                <div class="gallery-image">
+                    <img src="interior.png" alt="interior.jpg">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="gallery-image">
+                    <img src="gallery.png" alt="gallery.jpg">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact-section section-padding" id="contact">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">GET IN TOUCH</span>
+
+            <h2>Contact WARD</h2>
+
+            <p>We would love to hear from you.</p>
+
+        </div>
+
+        <div class="row g-5">
+
+            <div class="col-lg-5">
+
+                <div class="contact-info">
+
+                    <h3>Let's Connect</h3>
+
+                    <p>
+                        Have a question or want to visit us?
+                        Feel free to contact us.
+                    </p>
+
+                    <div class="contact-detail">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>Minia, Egypt</span>
+                    </div>
+
+                    <div class="contact-detail">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>+20 100 000 0000</span>
+                    </div>
+
+                    <div class="contact-detail">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span>hello@ward.com</span>
+                    </div>
+
+                    <div class="social-links">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-7">
+
+                <form id="contactForm" class="contact-form">
+
+                    <input type="text"
+                        class="form-control"
+                        placeholder="Your Name"
+                        required>
+
+                    <input type="email"
+                        class="form-control"
+                        placeholder="Your Email"
+                        required>
+
+                    <input type="text"
+                        class="form-control"
+                        placeholder="Subject">
+
+                    <textarea class="form-control"
+                        rows="5"
+                        placeholder="Your Message"
+                        required></textarea>
+
+                    <button type="submit" class="btn send-btn">
+                        Send Message
+                        <i class="bi bi-send"></i>
+                    </button>
+
+                    <p id="formMessage" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row align-items-center gy-3">
+
+            <div class="col-md-4 text-center text-md-start">
+                <a href="#home" class="logo footer-logo">
+                    WARD<span>.</span>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#hot">Menu</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+
+            <div class="col-md-4 text-center text-md-end">
+                <p>© 2026 WARD Coffee House.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
